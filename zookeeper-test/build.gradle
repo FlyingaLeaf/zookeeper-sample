@@ -1,0 +1,19 @@
+group 'com.flyingrain.zookeeper'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile group: 'org.apache.zookeeper', name: 'zookeeper', version: '3.4.9', ext: 'pom'
+
+}
